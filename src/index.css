@@ -1,0 +1,25 @@
+:root{
+  
+  
+
+  --purple: #895A95;
+  --yellow: #FBD168;
+  --brown: #6E4227;
+  --light-brown: #D9C1AF;
+  --white: #fff;
+  --light-black: #1a1d23;
+  --color-neutral-90: #cfd4dd;
+
+  --extra-small: 16px;
+  --small: 24px;
+  --medium: 56px;
+  --large: 76px;
+  --extra-large: 96px;
+}
+
+
+body{
+  width: 100vw;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
