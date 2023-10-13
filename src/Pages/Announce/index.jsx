@@ -28,12 +28,16 @@ const AnnouncePage = () => {
 
             <s.UserBadge>
                 <ImageInfo image={image5} title={"Fique Atento"}/>
-                <ImageInfo image={image6} title = {"Dê preferência ao chat da OLX como forma de confirmação de status das suas vendas."} key={"information"}/>
-                <ImageInfo image={image7} title = {"Evite clicar em links para outros sites no chat."} key={"information"}/>
-                <ImageInfo image={image8} title = {"Desconfie de pessoas que entram em contato com você em nome da OLX solicitando informações ou pagamentos."} key={"information"}/>
-                <ImageInfo image={image9} title = {"Nunca pedimos códigos de confirmação via chat ou aplicativos de mensagens."} key={"information"}/>
+                <s.ItemContainer2>
+                    <ImageInfo image={image9} title = {"Dê preferência ao chat da OLX como forma de confirmação de status das suas vendas."} key={"information"}/>
+                    <ImageInfo image={image8} title = {"Evite clicar em links para outros sites no chat."} key={"information"}/>
+                    <ImageInfo image={image7} title = {"Desconfie de pessoas que entram em contato com você em nome da OLX solicitando informações ou pagamentos."} key={"information"}/>
+                    <ImageInfo image={image6} title = {"Nunca pedimos códigos de confirmação via chat ou aplicativos de mensagens."} key={"information"}/>
+                </s.ItemContainer2>
+
 
             </s.UserBadge>
+            <s.Button>Concluir</s.Button>
         </s.Container>
     )
 }

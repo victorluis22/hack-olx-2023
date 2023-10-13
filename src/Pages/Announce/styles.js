@@ -31,15 +31,15 @@ export const UserBadge = styled.div`
     background-color: rgba(128, 128, 128, 0.07);
     display: flex;
     flex-direction: column;
-    padding-top: 2px;
+    padding-top: 10px;
     padding-bottom: 2px;
-    padding-left: 50px;
-    padding-right: 50px;
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
     justify-content: center;
     align-items: center;
     gap: 8px;
-    border: 2px solid gray;
-    border-radius: 40px;
+    border-radius: 20px;
+    width: 50%;
 `;
 
 export const ItemContainer = styled.div`
@@ -49,4 +49,23 @@ export const ItemContainer = styled.div`
     /* align-items: center; */
     width: 50%;
     border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+`;
+
+export const ItemContainer2 = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 70%;
+    border-top: 1px solid rgba(128, 128, 128, 0.4);
+`;
+
+export const Button = styled.button`
+    background-color: #F28000;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    width: 50%;
+    margin-top: 2rem;
 `;
