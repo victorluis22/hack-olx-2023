@@ -21,10 +21,11 @@ export const Subtitle = styled.span`
 
 export const PhotoArea = styled.div`
     display: flex;
+    align-items: center
 `;
 
 export const Photo = styled.img`
-    width: 150px;
+    width: 50px;
     margin-left: 0px;
     margin-right: 20px;
 `;

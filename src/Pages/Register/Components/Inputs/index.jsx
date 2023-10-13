@@ -3,7 +3,7 @@ import * as s from "./styles.js"
 
 
 
-const Input = ({title, hasTextArea}) => {
+const Input = ({title, hasTextArea, valueInput}) => {
     return(
         <s.Container>
             <s.Title>{title}</s.Title>
@@ -12,7 +12,7 @@ const Input = ({title, hasTextArea}) => {
             {hasTextArea ?
                 <s.TextArea />
                 :
-                <s.Input />
+                <s.Input value={valueInput}/>
             }
         </s.Container>
     )

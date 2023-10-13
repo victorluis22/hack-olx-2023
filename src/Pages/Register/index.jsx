@@ -1,10 +1,25 @@
 import React from "react";
 import * as s from "./styles";
-import SelectInput from "./Components/SelectInput";
 import  { AiOutlineArrowLeft } from "react-icons/ai"
+// import { GoLocation } from "react-icons/md"
+
+import LocationPin from "../../Assets/GlobalImages/locationPin.svg"
+import TelefoneIcon from "../../Assets/GlobalImages/telephoneIcon.svg"
+import AlertIcon from "../../Assets/GlobalImages/exclamationIcon.svg"
+
+import SelectInput from "./Components/SelectInput";
 import Input from "./Components/Inputs";
+import FotoSubmit from "./Components/FotoSubmit"
+import BottomContent from "./Components/BottomContent";
+import CheckboxOption from "./Components/CheckboxOption";
+
+import { useState } from "react";
+
 
 const Register = () => {
+    
+    const [cep, setCep] = useState("00000-000")
+    
     return(
       <s.Container>
         <s.Title>O que você está anunciando?</s.Title>
@@ -24,8 +39,20 @@ const Register = () => {
           <SelectInput label={"Cor"} options={["Roxo"]}/>
           <SelectInput label={"Saúde da bateria"} options={["90%"]}/>
           <Input title={"Preço (R$)"}/>
-          <Input title={"Localização"}/>
           <Input title={"Contato"}/>
+
+          <FotoSubmit />
+          <Input title={"Localização*"} valueInput={cep}/>
+          <BottomContent title={""} content={"Olaria, Nova Friburgo - RJ"} photo={LocationPin}/>
+          {/* <GoLocation /> */}
+          {/* Pra quem ver esse comentário, não consegui usar o ícone de pin de localização nem pelo decreto. Se quiserem tentar... */}
+
+          <BottomContent title={"Contato"} content={"(21)99999-9999"} photo={TelefoneIcon}/>
+          <BottomContent title={""} content={"Não pedimos códigos por ligação, chat ou WhatsApp. Desconfie se alguém entrar em contato ou enviar comprovante de pagamento em nome da OLX."} photo={AlertIcon}/>
+
+          <CheckboxOption title={"Ocultar meu telefone neste anúncio"}/>
+          
+          <BottomContent title={"Verificação de Segurança*"} content={"Por favor, digite o texto mostrado na imagem abaixo para concluir o envio do seu anúncio."} photo={null}/>
         </s.Card>
       </s.Container>  
     )
