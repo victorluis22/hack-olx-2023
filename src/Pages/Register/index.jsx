@@ -54,6 +54,8 @@ const Register = () => {
           <CheckboxOption title={"Ocultar meu telefone neste anúncio"}/>
           
           <BottomContent title={"Verificação de Segurança*"} content={"Por favor, digite o texto mostrado na imagem abaixo para concluir o envio do seu anúncio."} photo={null} bottomImage={VerificationCode}/>
+
+          <a href="/announce">Clique aqui para ir para a próxima página</a>
         </s.Card>
       </s.Container>  
     )

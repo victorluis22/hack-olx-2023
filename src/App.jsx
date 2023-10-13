@@ -1,6 +1,7 @@
 import './App.css'
 
 import Header from './Components/Header';
+import AnnouncePage from './Pages/Announce';
 import Register from './Pages/Register';
 
 import { BrowserRouter as Router } from 'react-router-dom'
@@ -8,7 +9,8 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   const pages = [
-    {url: "/", element: <Register />}
+    {url: "/", element: <Register />},
+    {url: "/announce", element: <AnnouncePage />}
   ]
   return (
     <>
