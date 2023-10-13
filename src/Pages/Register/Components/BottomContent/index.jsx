@@ -1,7 +1,7 @@
 import React from "react";
 import * as s from "./styles"
 
-const BottomContent = ({title, photo, content}) => {
+const BottomContent = ({title, photo, content, bottomImage}) => {
     return(
         <s.Container>
             <s.Title>{title}</s.Title>
@@ -18,6 +18,19 @@ const BottomContent = ({title, photo, content}) => {
                 <s.Subtitle>{content}</s.Subtitle>
             </s.PhotoArea>
             
+            }
+            {
+                bottomImage != null ?
+                <>
+                <s.PhotoArea>
+                    <s.SecondaryPhoto src={bottomImage}/>
+                </s.PhotoArea>
+                <s.Input />
+                <s.Subtitle>As informações com * são obrigatórias.</s.Subtitle>
+
+                </>
+                :
+                <></>
             }
         </s.Container>
     )

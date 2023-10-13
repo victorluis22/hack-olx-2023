@@ -29,3 +29,21 @@ export const Photo = styled.img`
     margin-left: 0px;
     margin-right: 20px;
 `;
+
+export const SecondaryPhoto = styled.img`
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+`;
+
+export const Input = styled.input`
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 20px;
+    max-width: 58%;
+    padding: 10px 0px;
+    padding-left: 2%;
+    padding-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+`;

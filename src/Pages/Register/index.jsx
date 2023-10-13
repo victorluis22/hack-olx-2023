@@ -12,6 +12,7 @@ import Input from "./Components/Inputs";
 import FotoSubmit from "./Components/FotoSubmit"
 import BottomContent from "./Components/BottomContent";
 import CheckboxOption from "./Components/CheckboxOption";
+import VerificationCode from "../../Assets/GlobalImages/verificationCode.png"
 
 import { useState } from "react";
 
@@ -52,7 +53,7 @@ const Register = () => {
 
           <CheckboxOption title={"Ocultar meu telefone neste anúncio"}/>
           
-          <BottomContent title={"Verificação de Segurança*"} content={"Por favor, digite o texto mostrado na imagem abaixo para concluir o envio do seu anúncio."} photo={null}/>
+          <BottomContent title={"Verificação de Segurança*"} content={"Por favor, digite o texto mostrado na imagem abaixo para concluir o envio do seu anúncio."} photo={null} bottomImage={VerificationCode}/>
         </s.Card>
       </s.Container>  
     )
