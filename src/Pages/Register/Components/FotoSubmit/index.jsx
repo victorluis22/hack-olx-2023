@@ -30,7 +30,7 @@ const FotoSubmit = ({onUpload}) => {
 
         const fd = new FormData();
         for (let i = 0; i<files.lenght; i++){
-            fd.append(`file${}`)
+            fd.append(`file${i+1}`, files[i]);
         }
 
         setMessage("Fazendo upload...");
@@ -60,7 +60,7 @@ const FotoSubmit = ({onUpload}) => {
         <s.Container>
             <s.Title>Fotos</s.Title>
             <s.Subtitle>Envie até 6 fotos</s.Subtitle>
-            <s.Input type="file" onChange={(e) => {setFile(e.target.files)}} multiple />            
+            <s.Input type="file" onChange={(e) => {setFiles(e.target.files)}} multiple />            
             <s.PhotoArea>
                 {/* {file && <s.Photo src={URL.createObjectURL(file)}/>} */}
                 {
