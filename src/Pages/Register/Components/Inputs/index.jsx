@@ -3,16 +3,15 @@ import * as s from "./styles.js"
 
 
 
-const Input = ({title, hasTextArea, valueInput}) => {
+const Input = ({title, hasTextArea, valueInput, onChangeFunction}) => {
     return(
         <s.Container>
             <s.Title>{title}</s.Title>
-            
 
             {hasTextArea ?
-                <s.TextArea />
+                <s.TextArea onChange={(e) => onChangeFunction(e)} value={valueInput}/>
                 :
-                <s.Input value={valueInput}/>
+                <s.Input onChange={(e) => onChangeFunction(e)} value={valueInput}/>
             }
         </s.Container>
     )

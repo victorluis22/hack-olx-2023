@@ -29,3 +29,19 @@ export const Card = styled.div`
     width: 80%;
     padding: 30px 40px;
 `;
+
+export const Button = styled.button`
+    background-color: #F28000;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    width: 50%;
+    margin-top: 2rem;
+    align-self: center;
+`;
+
+export const Link = styled.a`
+    text-decoration: none;
+    color: white;
+`;

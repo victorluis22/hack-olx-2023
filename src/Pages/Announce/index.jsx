@@ -37,7 +37,7 @@ const AnnouncePage = () => {
 
 
             </s.UserBadge>
-            <s.Button>Concluir</s.Button>
+            <s.Button href="/">Voltar a pagina inicial</s.Button>
         </s.Container>
     )
 }
