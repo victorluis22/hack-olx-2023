@@ -25,12 +25,12 @@ const Register = () => {
     const [content, setContent] = useState({
       Titulo: "",
       Descricao: "",
-      Marca: "Apple",
-      Modelo: "Iphone 14 pro Max",
-      Condicao: "Usado",
-      Memoria: "-",
-      Cor: "Roxo",
-      Bateria: "90%",
+      Marca: "",
+      Modelo: "",
+      Condicao: "",
+      Memoria: "",
+      Cor: "",
+      Bateria: "",
       Preco: "",
       Localizacao: "",
       Contato: "",
@@ -49,7 +49,8 @@ const Register = () => {
       // .catch((error) => {
       //   console.log(error);
       // });
-      navigate("/verification")
+      navigate("/verification", {state: {content: content}})
+      window.scrollTo(0, 0)
     };
 
 
@@ -132,12 +133,12 @@ const Register = () => {
 
           <Input title={"Título*"} valueInput={content.Titulo} onChangeFunction={handleChangeTitle}/>
           <Input title={"Descrição*"} hasTextArea={true} valueInput={content.Descricao} onChangeFunction={handleChangeDesc} placeholder={"Descreva aqui seu aparelho"}/>
-          <SelectInput label={"Marca*"} options={["-", "Apple"]} valueInput={content.Marca} onChangeFunction={handleChangeMark}/>
-          <SelectInput label={"Modelo*"} options={["-","Iphone 14 PRO MAX"]} valueInput={content.Modelo} onChangeFunction={handleChangeModel}/>
+          <SelectInput label={"Marca*"} options={["-", "Apple","Samsung","Motorola"]} valueInput={content.Marca} onChangeFunction={handleChangeMark}/>
+          <SelectInput label={"Modelo*"} options={["-","iPhone 8","iPhone 8 Plus","iPhone X","iPhone XR", "iPhone XS","iPhone XS Max", "iPhone 11","iPhone 11 PRO","iPhone 11 PRO MAX","iPhone SE (2da generación)","iPhone 12","iPhone 12 mini","iPhone 12 PRO","iPhone 12 PRO MAX","Iphone 13","Iphone 13 PRO","Iphone 13 PRO MAX","Iphone 14","Iphone 14 PRO","Iphone 14 PRO MAX"]} valueInput={content.Modelo} onChangeFunction={handleChangeModel}/>
           <SelectInput label={"Condição"} options={["-","Usado"]} valueInput={content.Condicao} onChangeFunction={handleChangeCondition}/>
           <SelectInput label={"Memória Interna"} options={["-", "64GB", "128GB", "256GB"]} valueInput={content.Memoria} onChangeFunction={handleChangeCapacity}/>
-          <SelectInput label={"Cor"} options={["-","Roxo"]} valueInput={content.Cor} onChangeFunction={handleChangeColor} />
-          <SelectInput label={"Saúde da bateria"} options={["-","90%"]} valueInput={content.Bateria} onChangeFunction={handleChangeBatery}/>
+          <SelectInput label={"Cor"} options={["-","Azul Sierra","Rosa","Meia-noite","Estelar","Verde","Red"]} valueInput={content.Cor} onChangeFunction={handleChangeColor} />
+          <SelectInput label={"Saúde da bateria"} options={["-","80-90%","90-100%"]} valueInput={content.Bateria} onChangeFunction={handleChangeBatery}/>
           <Input title={"Preço (R$)"} valueInput={content.Preco} onChangeFunction={handleChangePrice}/>
 
           <FotoSubmit />

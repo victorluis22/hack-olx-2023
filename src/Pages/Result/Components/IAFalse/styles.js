@@ -2,16 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
    display: flex;
-   flex-direction: column;
    justify-content: center;
    align-items: center;
-   width: 30%;
-   /* background-color: red; */
-   padding: 0px 20px;
-   position: fixed;
-   top: 10px;
-   left: 10px;
-   bottom: 10px;
+   flex-direction: column;
+   color: var(--light-black);
+   margin: 40px 0px;
+   width: 40%;
+   
 `;
 
 export const Image = styled.img`

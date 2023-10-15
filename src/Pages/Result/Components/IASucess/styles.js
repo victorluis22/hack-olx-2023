@@ -7,21 +7,11 @@ export const Container = styled.div`
    flex-direction: column;
    color: var(--light-black);
    margin: 40px 0px;
-`;
-
-
-export const SideContainer = styled.div`
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   width: 30%;
-   /* background-color: red; */
-   padding: 0px 20px;
    position: fixed;
-   top: 10px;
-   left: 10px;
+   top: 50px;
+   left: 50px;
    bottom: 10px;
+   width: 30%;
 `;
 
 export const Image = styled.img`

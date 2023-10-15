@@ -2,14 +2,23 @@ import React, { useEffect, useState } from "react";
 import * as s from "./styles";
 
 import loading from '../../Assets/VerificationImage/loading.gif'
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Verification = () => {
     const navigate = useNavigate()
+    const location = useLocation();
+    const { content } = location.state
 
     useEffect(() => {
       setTimeout(() => {
-        navigate("/verification/final/true")
+        console.log(content)
+        if (content.Memoria == "64GB"){
+          navigate("/verification/final/false")
+        }
+        else{
+          navigate("/verification/final/true")
+        }
+        
       }, 2000)
     }, [])
 

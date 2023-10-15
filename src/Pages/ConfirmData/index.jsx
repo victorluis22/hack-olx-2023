@@ -2,22 +2,27 @@ import React, { useEffect, useState } from "react";
 import * as s from "./styles";
 
 import loading from '../../Assets/VerificationImage/loading.gif'
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import FacialArea from "../../Assets/VerificationImage/FacialArea.svg"
 
 import NameInput from "./Components/NameInput";
 import CPFInput from "./Components/NameInput";
-import DateInput from './Components/DateInput'
+import DateInput from './Components/DateInput';
+
 const ConfirmData = () => {
-    
+  
     const navigate = useNavigate()
     const [name, setName] = useState("")
     const [CPF, setCPF] = useState("")
     const [date, setDate] = useState("")
+    const location = useLocation();
+    const { content } = location.state
+
 
     const switchPage = () => {
-      navigate("/verification/final")
+      navigate("/verification/final", {state: {content: content}})
+      window.scrollTo(0, 0)
     }
     
     return(
