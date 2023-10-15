@@ -17,6 +17,7 @@ import VerificationCode from "../../Assets/GlobalImages/verificationCode.png"
 import axios from "axios";
 
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const Register = () => {
@@ -35,17 +36,20 @@ const Register = () => {
       Contato: "",
       Golpe: ""
     });
+
+    const navigate = useNavigate()
     
 
     const handleSubmit = () => {
-      axios
-      .post('http://localhost:5000/', content)
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+      // axios
+      // .post('http://localhost:5000/', content)
+      // .then((response) => {
+      //   console.log(response);
+      // })
+      // .catch((error) => {
+      //   console.log(error);
+      // });
+      navigate("/verification")
     };
 
 
@@ -122,7 +126,7 @@ const Register = () => {
         <s.Card>
           
           <s.SubtitleArea>
-            <AiOutlineArrowLeft />
+            <AiOutlineArrowLeft size={18} color="purple"/>
             <s.Subtitle>Celulares e Telefonia</s.Subtitle>
           </s.SubtitleArea>
 
@@ -148,8 +152,7 @@ const Register = () => {
           
           <BottomContent title={"Verificação de Segurança*"} content={"Por favor, digite o texto mostrado na imagem abaixo para concluir o envio do seu anúncio."} photo={null} bottomImage={VerificationCode}/>
 
-          <s.Button onClick={handleSubmit}>aqui</s.Button>
-          <s.Link href="/announce">Clique aqui para ir para a próxima página</s.Link> 
+          <s.Button onClick={handleSubmit}>Enviar</s.Button>
         </s.Card>
       </s.Container>  
     )

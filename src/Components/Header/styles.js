@@ -1,40 +1,37 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 60px;
-    padding-right: 60px;
-    height: 12vh;
-    border-bottom: 1px solid gray;
-
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 0px 40px;
+    z-index: 4;
 `;
 
 export const Image = styled.img`
     width: 60px;
-    
+    &:hover{
+        cursor: pointer;
+    }
 `;
 
 export const UserBadge = styled.div`
     display: flex;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0px 40px;
     justify-content: center;
     align-items: center;
     gap: 8px;
-    border: 2px solid gray;
+    border: 2px solid var(--color-neutral-90);;
     border-radius: 40px;
+    margin: 10px 0px;
 `;
 
 export const Avatar = styled.img`
-    width: 55px;
+    width: 35px;
     border-radius: 50px;
 `;
 
 export const Name = styled.p`
-    font-size: 20px;
+    font-size: 18px;
 `;

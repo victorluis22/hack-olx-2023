@@ -12,11 +12,14 @@ export const Title = styled.h1`
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 40px 0px;
-    /* color: var(--light-black); */
+    color: var(--light-black);
 `;
 
 export const SubtitleArea = styled.div`
-    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
 `;
 
 export const Subtitle = styled.h2`
@@ -28,20 +31,23 @@ export const Card = styled.div`
     border: 2px solid var(--color-neutral-90);
     width: 80%;
     padding: 30px 40px;
+    display: grid;
 `;
 
 export const Button = styled.button`
-    background-color: #F28000;
+    background-color: var(--orange);
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     color: white;
     font-size: 20px;
-    width: 50%;
+    /* width: 50%; */
     margin-top: 2rem;
-    align-self: center;
-`;
+    justify-self: flex-end;
+    padding: 15px 50px;
+    transition: 0.2s;
 
-export const Link = styled.a`
-    text-decoration: none;
-    color: white;
+    &:hover{
+        cursor: pointer;
+        background-color: var(--hover-orange);
+    }
 `;

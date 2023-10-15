@@ -40,12 +40,19 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-    background-color: #F28000;
+    background-color: var(--orange);
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     color: white;
     font-size: 20px;
-    width: 50%;
+    width: fit-content;
     margin-top: 2rem;
-    align-self: center;
+    justify-self: flex-end;
+    padding: 15px 50px;
+    transition: 0.2s;
+
+    &:hover{
+        cursor: pointer;
+        background-color: var(--hover-orange);
+    }
 `;

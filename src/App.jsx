@@ -1,28 +1,36 @@
 import './App.css'
 
 import Header from './Components/Header';
-import AnnouncePage from './Pages/Announce';
+import Announce from './Pages/Announce';
 import Register from './Pages/Register';
 
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Route, Routes } from "react-router-dom";
+import Verification from './Pages/Verification';
+import Result from './Pages/Result';
+import ConfirmData from './Pages/ConfirmData';
+
 
 function App() {
   const pages = [
     {url: "/", element: <Register />},
-    {url: "/announce", element: <AnnouncePage />}
+    {url: "/verification", element: <ConfirmData />},
+    {url: "/verification/final", element: <Verification />},
+    {url: "/verification/final/:result", element: <Result />},
+    {url: "/announce", element: <Announce/>},
   ]
+
   return (
-    <>
-      <Header />
+    <div className='App'>
       <Router basename="">
+        <Header />
         <Routes>
           {pages.map((eachPage) => {
             return <Route path={eachPage.url} element={eachPage.element}/>
           })}
         </Routes>
       </Router>
-    </>
+    </div>
   )
 }
 

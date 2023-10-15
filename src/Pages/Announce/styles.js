@@ -2,70 +2,79 @@ import styled from "styled-components";
 
 export const Container = styled.div`
    display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   color: var(--light-black);
+   flex: 1;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-bottom: 40px;
+   padding: 50px;
+`;
+
+export const MainContainer = styled.div`
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    
+`;
+
+export const ImageContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+`;
+
+export const Image = styled.img`
+    width: 50%;
+    height: 500px;
+`;
+
+export const Imageaux = styled.img`
+    width: 80%;
+    height: 75px;
+    border-radius: 10px;
+    padding: 6px;
+`;
+
+export const SubImageContainer = styled.div`
+    display: flex;
+    flex-direction: column;
 `;
 
 export const Title = styled.h1`
-    font-size: 25px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 40px 0px;
-    /* color: var(--light-black); */
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: var(--light-black);
+    font-weight: 600;
+`;
+
+export const SubTitle = styled.h2`
+    font-size: 16px;
+    color: var(--light-black);
     font-weight: lighter;
 `;
 
-export const Subtitle = styled.h2`
-    font-size: 17px;
+
+export const Price = styled.h2`
+    font-size: 18px;
+    color: var(--light-black);
+    font-weight: bold;
+    margin-bottom: 10px;
 `;
 
-export const Card = styled.div`
-    border-radius: 4px;
-    border: 2px solid var(--color-neutral-90);
-    width: 80%;
-    padding: 30px 40px;
+export const Description = styled.p`
+    font-size: 18px;
+    color: var(--light-black);
+    font-weight: lighter;
+    width: 90%;
 `;
-export const UserBadge = styled.div`
-    background-color: rgba(128, 128, 128, 0.07);
+
+export const ButtonGroup = styled.div`
     display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 2px;
-    /* padding-left: 50px; */
-    /* padding-right: 50px; */
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 20px;
-    width: 50%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
 `;
 
-export const ItemContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    width: 50%;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
-`;
 
-export const ItemContainer2 = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    width: 70%;
-    border-top: 1px solid rgba(128, 128, 128, 0.4);
-`;
-
-export const Button = styled.button`
-    background-color: #F28000;
-    border: none;
-    border-radius: 15px;
-    color: white;
-    font-size: 20px;
-    width: 50%;
-    margin-top: 2rem;
+export const SideContainer = styled.div`
+    width: 30%;
 `;
