@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Router basename="">
+      <Router basename="hack-olx-2023">
         <Header />
         <Routes>
           {pages.map((eachPage) => {
