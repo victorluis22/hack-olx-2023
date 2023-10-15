@@ -16,6 +16,10 @@ const ConfirmData = () => {
     const [CPF, setCPF] = useState("")
     const [date, setDate] = useState("")
 
+    const switchPage = () => {
+      navigate("/verification/final")
+    }
+    
     return(
       <s.Container>
         <s.Card>
@@ -34,6 +38,7 @@ const ConfirmData = () => {
             <s.Title>Centralize seu rosto dentro da área demarcada</s.Title>            
           </s.FacialArea>
         </s.Card>
+        <s.Button onClick={switchPage}>Efetuar verificação</s.Button>
       </s.Container>  
     )
 }

@@ -18,7 +18,7 @@ export const SideContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 40px;

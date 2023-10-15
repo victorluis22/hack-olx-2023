@@ -28,7 +28,7 @@ const Register = () => {
       Marca: "Apple",
       Modelo: "Iphone 14 pro Max",
       Condicao: "Usado",
-      Memoria: "256gb",
+      Memoria: "-",
       Cor: "Roxo",
       Bateria: "90%",
       Preco: "",
@@ -131,13 +131,13 @@ const Register = () => {
           </s.SubtitleArea>
 
           <Input title={"Título*"} valueInput={content.Titulo} onChangeFunction={handleChangeTitle}/>
-          <Input title={"Descrição*"} hasTextArea={true} valueInput={content.Descricao} onChangeFunction={handleChangeDesc}/>
-          <SelectInput label={"Marca*"} options={["Apple"]} valueInput={content.Marca} onChangeFunction={handleChangeMark}/>
-          <SelectInput label={"Modelo*"} options={["Iphone 14 PRO MAX"]} valueInput={content.Modelo} onChangeFunction={handleChangeModel}/>
-          <SelectInput label={"Condição"} options={["Usado"]} valueInput={content.Condicao} onChangeFunction={handleChangeCondition}/>
-          <SelectInput label={"Memória Interna"} options={["256GB"]} valueInput={content.Memoria} onChangeFunction={handleChangeCapacity}/>
-          <SelectInput label={"Cor"} options={["Roxo"]} valueInput={content.Cor} onChangeFunction={handleChangeColor} />
-          <SelectInput label={"Saúde da bateria"} options={["90%"]} valueInput={content.Bateria} onChangeFunction={handleChangeBatery}/>
+          <Input title={"Descrição*"} hasTextArea={true} valueInput={content.Descricao} onChangeFunction={handleChangeDesc} placeholder={"Descreva aqui seu aparelho"}/>
+          <SelectInput label={"Marca*"} options={["-", "Apple"]} valueInput={content.Marca} onChangeFunction={handleChangeMark}/>
+          <SelectInput label={"Modelo*"} options={["-","Iphone 14 PRO MAX"]} valueInput={content.Modelo} onChangeFunction={handleChangeModel}/>
+          <SelectInput label={"Condição"} options={["-","Usado"]} valueInput={content.Condicao} onChangeFunction={handleChangeCondition}/>
+          <SelectInput label={"Memória Interna"} options={["-", "64GB", "128GB", "256GB"]} valueInput={content.Memoria} onChangeFunction={handleChangeCapacity}/>
+          <SelectInput label={"Cor"} options={["-","Roxo"]} valueInput={content.Cor} onChangeFunction={handleChangeColor} />
+          <SelectInput label={"Saúde da bateria"} options={["-","90%"]} valueInput={content.Bateria} onChangeFunction={handleChangeBatery}/>
           <Input title={"Preço (R$)"} valueInput={content.Preco} onChangeFunction={handleChangePrice}/>
 
           <FotoSubmit />

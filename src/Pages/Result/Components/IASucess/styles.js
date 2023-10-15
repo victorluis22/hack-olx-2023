@@ -2,6 +2,16 @@ import styled from "styled-components";
 
 export const Container = styled.div`
    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   color: var(--light-black);
+   margin: 40px 0px;
+`;
+
+
+export const SideContainer = styled.div`
+   display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
