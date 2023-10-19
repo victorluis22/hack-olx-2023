@@ -1,0 +1,101 @@
+Marca,Modelo,Condicao,Memoria,Bateria,Preco,TempoConta,Vendas,Golpe
+Apple,iPhone 6,Novo,32,Perfeita (95% ate 100%),2918.99,203,15,Sim
+Apple,iPhone 8,Recondicionado,16,Ok (60% ate 79%),518.32,238,12,Sim
+Apple,iPhone SE 2020,Usado - Bom,16,Perfeita (95% ate 100%),2602.75,97,11,Sim
+Apple,iPhone 7 Plus,Usado - Excelente,128,Muito Ruim (abaixo de 39%),696.07,135,16,Nao
+Apple,iPhone 8 Plus,Com defeito,128,Boa (80% ate 94%),1102.78,125,7,Nao
+Apple,iPhone 8,Recondicionado,32,Ruim (40% ate 59%),1530.22,327,19,Sim
+Apple,iPhone 7,Com defeito,32,Ruim (40% ate 59%),2688.02,187,15,Sim
+Apple,iPhone 6,Com defeito,64,Muito Ruim (abaixo de 39%),2691.13,336,12,Sim
+Apple,iPhone 8,Usado - Bom,32,Muito Ruim (abaixo de 39%),2315.77,135,8,Sim
+Apple,iPhone SE 2020,Com defeito,64,Boa (80% ate 94%),802.33,345,18,Nao
+Apple,iPhone 8,Usado - Excelente,128,Ruim (40% ate 59%),1950.48,178,6,Sim
+Apple,iPhone 7 Plus,Usado - Bom,128,Boa (80% ate 94%),2572.04,218,17,Sim
+Apple,iPhone 7,Recondicionado,256,Ok (60% ate 79%),2203.25,110,15,Sim
+Apple,iPhone 6S Plus,Novo,128,Perfeita (95% ate 100%),2601.38,131,16,Nao
+Apple,iPhone 6 Plus,Com defeito,32,Ok (60% ate 79%),2652.1,360,1,Sim
+Apple,iPhone 6,Recondicionado,32,Muito Ruim (abaixo de 39%),813.17,158,6,Nao
+Apple,iPhone 6S Plus,Novo,256,Muito Ruim (abaixo de 39%),2769.9,99,11,Nao
+Apple,iPhone 6,Novo,16,Boa (80% ate 94%),2657.29,60,2,Sim
+Apple,iPhone 8 Plus,Com defeito,16,Perfeita (95% ate 100%),2242.76,92,14,Sim
+Apple,iPhone 6S,Recondicionado,128,Perfeita (95% ate 100%),2296.24,203,15,Nao
+Apple,iPhone 7,Com defeito,8,Muito Ruim (abaixo de 39%),2764.92,252,2,Sim
+Apple,iPhone SE 2020,Usado - Bom,128,Perfeita (95% ate 100%),980.22,277,10,Nao
+Apple,iPhone 7 Plus,Recondicionado,8,Muito Ruim (abaixo de 39%),2689.22,176,12,Sim
+Apple,iPhone 6S Plus,Usado - Excelente,64,Ok (60% ate 79%),430.29,192,9,Nao
+Apple,iPhone 7 Plus,Usado - Excelente,32,Ruim (40% ate 59%),389.74,296,1,Sim
+Apple,iPhone 6 Plus,Novo,64,Ruim (40% ate 59%),2557.5,98,17,Sim
+Apple,iPhone 7,Novo,8,Boa (80% ate 94%),2693.66,91,1,Sim
+Apple,iPhone 7,Usado - Excelente,256,Boa (80% ate 94%),1620.79,119,17,Sim
+Apple,iPhone 6S Plus,Recondicionado,128,Ruim (40% ate 59%),2934.82,243,2,Nao
+Apple,iPhone 8 Plus,Usado - Bom,256,Muito Ruim (abaixo de 39%),1641.68,21,2,Sim
+Apple,iPhone 8,Usado - Bom,128,Muito Ruim (abaixo de 39%),1082.79,53,8,Nao
+Apple,iPhone 6 Plus,Com defeito,16,Boa (80% ate 94%),1147.18,276,9,Sim
+Apple,iPhone 8,Novo,8,Boa (80% ate 94%),795.99,323,1,Sim
+Apple,iPhone 6S,Usado - Bom,8,Ok (60% ate 79%),2074.81,218,6,Nao
+Apple,iPhone 7,Recondicionado,8,Ruim (40% ate 59%),376.64,329,17,Sim
+Apple,iPhone 7 Plus,Usado - Bom,16,Ruim (40% ate 59%),770.59,64,1,Sim
+Apple,iPhone 8 Plus,Com defeito,8,Perfeita (95% ate 100%),1694.41,174,2,Sim
+Apple,iPhone 8,Recondicionado,8,Muito Ruim (abaixo de 39%),1581.01,337,6,Sim
+Apple,iPhone SE 2020,Com defeito,128,Boa (80% ate 94%),1634.37,330,3,Sim
+Apple,iPhone 7 Plus,Usado - Excelente,128,Muito Ruim (abaixo de 39%),1751.27,278,3,Sim
+Apple,iPhone 6S Plus,Recondicionado,8,Perfeita (95% ate 100%),2472.35,112,16,Nao
+Apple,iPhone 6,Novo,128,Boa (80% ate 94%),954.41,248,16,Nao
+Apple,iPhone 7 Plus,Com defeito,8,Perfeita (95% ate 100%),1846.39,178,16,Sim
+Apple,iPhone 6S,Usado - Bom,8,Muito Ruim (abaixo de 39%),2597.67,37,8,Nao
+Apple,iPhone 7,Recondicionado,128,Ok (60% ate 79%),387.93,122,17,Sim
+Apple,iPhone 6S Plus,Recondicionado,16,Perfeita (95% ate 100%),475.12,175,2,Nao
+Apple,iPhone 6,Recondicionado,64,Muito Ruim (abaixo de 39%),2305.74,208,16,Sim
+Apple,iPhone SE 2020,Novo,128,Ruim (40% ate 59%),2866.32,24,4,Sim
+Apple,iPhone 6S,Com defeito,128,Ruim (40% ate 59%),1629.34,249,9,Nao
+Apple,iPhone 7,Com defeito,8,Muito Ruim (abaixo de 39%),1417.37,243,8,Sim
+Apple,iPhone SE 2020,Com defeito,64,Boa (80% ate 94%),1628.1,34,2,Sim
+Apple,iPhone 8,Novo,16,Boa (80% ate 94%),2684.88,342,20,Sim
+Apple,iPhone 6,Usado - Excelente,8,Ok (60% ate 79%),891.25,113,19,Sim
+Apple,iPhone SE 2020,Com defeito,32,Ok (60% ate 79%),1671.51,234,13,Sim
+Apple,iPhone 6 Plus,Usado - Excelente,32,Muito Ruim (abaixo de 39%),2991.38,54,10,Sim
+Apple,iPhone 6 Plus,Recondicionado,256,Perfeita (95% ate 100%),346.18,233,18,Sim
+Apple,iPhone 6,Usado - Excelente,8,Boa (80% ate 94%),2480.73,245,5,Sim
+Apple,iPhone 6S Plus,Com defeito,256,Perfeita (95% ate 100%),1602.47,289,16,Nao
+Apple,iPhone 6S,Novo,32,Perfeita (95% ate 100%),463.48,140,12,Nao
+Apple,iPhone 6,Recondicionado,8,Perfeita (95% ate 100%),533.13,233,18,Sim
+Apple,iPhone SE 2020,Com defeito,16,Boa (80% ate 94%),1222.4,111,6,Sim
+Apple,iPhone 6 Plus,Recondicionado,256,Perfeita (95% ate 100%),564.18,89,9,Sim
+Apple,iPhone 7,Com defeito,16,Muito Ruim (abaixo de 39%),1689.76,27,7,Sim
+Apple,iPhone 6S Plus,Usado - Bom,16,Perfeita (95% ate 100%),1306.51,260,2,Nao
+Apple,iPhone 8 Plus,Novo,32,Ruim (40% ate 59%),807.5,339,20,Sim
+Apple,iPhone 7,Novo,32,Muito Ruim (abaixo de 39%),1144.13,180,6,Sim
+Apple,iPhone 6 Plus,Usado - Bom,128,Ok (60% ate 79%),1533.14,146,8,Sim
+Apple,iPhone 8 Plus,Com defeito,8,Boa (80% ate 94%),1312.85,336,11,Sim
+Apple,iPhone 6 Plus,Novo,16,Ruim (40% ate 59%),509.45,160,7,Nao
+Apple,iPhone 6,Com defeito,8,Perfeita (95% ate 100%),1380.75,227,17,Sim
+Apple,iPhone 6,Com defeito,256,Boa (80% ate 94%),2905.59,314,2,Sim
+Apple,iPhone 6,Usado - Excelente,64,Ruim (40% ate 59%),2927.28,282,4,Sim
+Apple,iPhone 6 Plus,Recondicionado,64,Perfeita (95% ate 100%),1744.77,5,7,Sim
+Apple,iPhone 6 Plus,Novo,32,Muito Ruim (abaixo de 39%),1311.11,7,18,Sim
+Apple,iPhone 6S Plus,Novo,64,Ok (60% ate 79%),2634.35,256,16,Nao
+Apple,iPhone 6S Plus,Usado - Excelente,32,Perfeita (95% ate 100%),2442.81,213,6,Nao
+Apple,iPhone 8 Plus,Com defeito,64,Perfeita (95% ate 100%),1132.76,29,20,Nao
+Apple,iPhone 6S,Novo,16,Boa (80% ate 94%),1165.29,100,4,Nao
+Apple,iPhone 6,Novo,32,Boa (80% ate 94%),726.41,264,7,Nao
+Apple,iPhone 7,Novo,8,Perfeita (95% ate 100%),211.52,34,19,Sim
+Apple,iPhone 7 Plus,Novo,64,Ok (60% ate 79%),2069.69,132,16,Sim
+Apple,iPhone 8,Com defeito,64,Muito Ruim (abaixo de 39%),1417.26,276,9,Sim
+Apple,iPhone 7,Recondicionado,64,Perfeita (95% ate 100%),2648.38,75,11,Sim
+Apple,iPhone 8 Plus,Usado - Excelente,256,Ruim (40% ate 59%),1978.51,185,20,Sim
+Apple,iPhone 6S Plus,Usado - Bom,128,Ok (60% ate 79%),2503.84,252,11,Nao
+Apple,iPhone SE 2020,Recondicionado,16,Muito Ruim (abaixo de 39%),1010.35,262,6,Sim
+Apple,iPhone 6S,Usado - Excelente,32,Muito Ruim (abaixo de 39%),1967.9,9,1,Nao
+Apple,iPhone SE 2020,Recondicionado,16,Ruim (40% ate 59%),913.5,277,19,Sim
+Apple,iPhone 8 Plus,Usado - Excelente,256,Boa (80% ate 94%),2852.54,252,17,Sim
+Apple,iPhone 6 Plus,Recondicionado,8,Ok (60% ate 79%),1352.18,235,20,Sim
+Apple,iPhone 6 Plus,Com defeito,64,Ok (60% ate 79%),339.41,15,12,Nao
+Apple,iPhone 8 Plus,Usado - Bom,256,Perfeita (95% ate 100%),1003.14,184,15,Nao
+Apple,iPhone 7,Usado - Bom,256,Ok (60% ate 79%),546.51,272,3,Nao
+Apple,iPhone SE 2020,Novo,32,Muito Ruim (abaixo de 39%),2770.75,159,16,Sim
+Apple,iPhone 8,Recondicionado,8,Muito Ruim (abaixo de 39%),2070.31,267,2,Sim
+Apple,iPhone 6,Com defeito,8,Muito Ruim (abaixo de 39%),1634.42,255,5,Sim
+Apple,iPhone SE 2020,Com defeito,32,Boa (80% ate 94%),1073.7,275,14,Sim
+Apple,iPhone 7 Plus,Usado - Bom,256,Muito Ruim (abaixo de 39%),916.6,330,15,Nao
+Apple,iPhone 8 Plus,Novo,32,Perfeita (95% ate 100%),2862.71,336,20,Sim
+Apple,iPhone 6 Plus,Novo,64,Ok (60% ate 79%),917.12,10,2,Nao

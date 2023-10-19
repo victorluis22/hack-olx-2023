@@ -1,0 +1,101 @@
+Marca,Modelo,Condicao,Memoria,Bateria,Preco,TempoConta,Vendas,Golpe
+Apple,iPhone 13 Pro,Usado - Bom,16,Ok (60% ate 79%),8024.58,60,6,Sim
+Apple,iPhone 14 Pro Max,Usado - Excelente,512,Muito Ruim (abaixo de 39%),8964.04,364,2,Sim
+Apple,iPhone 14,Com defeito,32,Ok (60% ate 79%),5777.93,295,14,Sim
+Apple,iPhone 13 Mini,Com defeito,16,Muito Ruim (abaixo de 39%),7573.25,102,18,Sim
+Apple,iPhone 15 Plus,Usado - Bom,8,Perfeita (95% ate 100%),7395.55,258,12,Sim
+Apple,iPhone 15 Pro,Usado - Bom,32,Ruim (40% ate 59%),5402.03,15,12,Sim
+Apple,iPhone 13 Pro Max,Recondicionado,128,Perfeita (95% ate 100%),5572.2,62,8,Sim
+Apple,iPhone 13 Mini,Com defeito,128,Boa (80% ate 94%),9822.37,356,13,Sim
+Apple,iPhone 15,Recondicionado,256,Ruim (40% ate 59%),5631.0,62,17,Sim
+Apple,iPhone 14 Pro,Com defeito,128,Muito Ruim (abaixo de 39%),4869.92,143,20,Sim
+Apple,iPhone 13 Mini,Recondicionado,512,Perfeita (95% ate 100%),7977.34,227,3,Sim
+Apple,iPhone 14 Plus,Usado - Excelente,1024,Muito Ruim (abaixo de 39%),5953.4,227,20,Sim
+Apple,iPhone 14,Usado - Bom,1024,Ok (60% ate 79%),8204.6,248,8,Sim
+Apple,iPhone 13 Pro Max,Usado - Excelente,256,Boa (80% ate 94%),6840.69,229,2,Sim
+Apple,iPhone 15 Pro,Novo,128,Ruim (40% ate 59%),7647.09,161,20,Nao
+Apple,iPhone 13,Com defeito,256,Boa (80% ate 94%),6537.0,90,10,Sim
+Apple,iPhone 15 Plus,Com defeito,512,Muito Ruim (abaixo de 39%),6487.26,65,9,Sim
+Apple,iPhone 13 Mini,Com defeito,256,Ok (60% ate 79%),3584.99,73,14,Sim
+Apple,iPhone 15 Pro,Usado - Excelente,64,Perfeita (95% ate 100%),7768.16,238,11,Sim
+Apple,iPhone 13 Pro Max,Com defeito,64,Ok (60% ate 79%),4806.67,19,18,Sim
+Apple,iPhone 15,Usado - Excelente,8,Muito Ruim (abaixo de 39%),5931.97,7,3,Sim
+Apple,iPhone 15 Pro Max,Novo,1024,Ok (60% ate 79%),6637.4,116,4,Sim
+Apple,iPhone 13 Mini,Com defeito,128,Perfeita (95% ate 100%),8284.27,323,2,Sim
+Apple,iPhone 14 Plus,Recondicionado,128,Muito Ruim (abaixo de 39%),6400.1,180,6,Sim
+Apple,iPhone 13,Recondicionado,512,Perfeita (95% ate 100%),6245.42,72,17,Sim
+Apple,iPhone 14 Pro,Usado - Bom,512,Boa (80% ate 94%),4766.38,42,8,Sim
+Apple,iPhone 14,Novo,64,Perfeita (95% ate 100%),9200.19,167,15,Sim
+Apple,iPhone 14,Usado - Bom,128,Muito Ruim (abaixo de 39%),8099.15,274,14,Sim
+Apple,iPhone 15 Plus,Com defeito,1024,Ruim (40% ate 59%),5509.06,24,4,Sim
+Apple,iPhone 14,Novo,256,Ruim (40% ate 59%),9424.01,317,16,Sim
+Apple,iPhone 14 Pro Max,Usado - Excelente,1024,Boa (80% ate 94%),8163.73,21,19,Sim
+Apple,iPhone 14 Pro Max,Com defeito,32,Ruim (40% ate 59%),3572.95,110,16,Sim
+Apple,iPhone 15 Pro,Usado - Bom,128,Perfeita (95% ate 100%),9081.44,75,12,Sim
+Apple,iPhone 15,Usado - Bom,8,Ruim (40% ate 59%),8178.13,330,9,Sim
+Apple,iPhone 14 Plus,Usado - Excelente,16,Boa (80% ate 94%),7504.17,14,20,Sim
+Apple,iPhone 15 Plus,Novo,32,Muito Ruim (abaixo de 39%),5876.68,209,7,Sim
+Apple,iPhone 14 Plus,Usado - Bom,8,Muito Ruim (abaixo de 39%),5329.66,220,17,Sim
+Apple,iPhone 13,Usado - Bom,64,Muito Ruim (abaixo de 39%),9634.03,190,8,Sim
+Apple,iPhone 14,Usado - Bom,512,Ok (60% ate 79%),3907.74,106,3,Sim
+Apple,iPhone 14 Pro Max,Recondicionado,256,Boa (80% ate 94%),9491.14,96,1,Sim
+Apple,iPhone 14 Pro Max,Novo,128,Ruim (40% ate 59%),9244.17,93,10,Sim
+Apple,iPhone 15,Usado - Excelente,1024,Perfeita (95% ate 100%),3606.49,240,15,Sim
+Apple,iPhone 13 Mini,Novo,256,Ruim (40% ate 59%),8832.74,252,8,Sim
+Apple,iPhone 13 Pro Max,Recondicionado,8,Ruim (40% ate 59%),4849.23,346,15,Sim
+Apple,iPhone 14 Pro Max,Com defeito,1024,Muito Ruim (abaixo de 39%),7792.39,118,17,Sim
+Apple,iPhone 15,Usado - Bom,256,Boa (80% ate 94%),9435.63,41,4,Sim
+Apple,iPhone 13 Pro Max,Com defeito,128,Ruim (40% ate 59%),8272.3,237,7,Sim
+Apple,iPhone 13 Pro,Recondicionado,256,Boa (80% ate 94%),9863.53,244,10,Sim
+Apple,iPhone 14 Pro Max,Usado - Bom,128,Perfeita (95% ate 100%),4741.41,295,12,Sim
+Apple,iPhone 13 Pro Max,Usado - Bom,128,Ruim (40% ate 59%),6204.79,234,2,Sim
+Apple,iPhone 14 Pro,Usado - Excelente,128,Ok (60% ate 79%),3638.02,172,7,Sim
+Apple,iPhone 13 Pro Max,Usado - Bom,256,Ok (60% ate 79%),9767.25,6,10,Sim
+Apple,iPhone 14 Pro Max,Usado - Excelente,1024,Ruim (40% ate 59%),5211.1,173,10,Sim
+Apple,iPhone 13 Pro Max,Com defeito,256,Ok (60% ate 79%),8942.55,340,9,Sim
+Apple,iPhone 14 Pro,Novo,32,Perfeita (95% ate 100%),3639.13,351,6,Sim
+Apple,iPhone 14 Pro,Usado - Excelente,32,Ok (60% ate 79%),6602.9,118,11,Sim
+Apple,iPhone 13 Pro Max,Usado - Excelente,16,Boa (80% ate 94%),5580.36,252,2,Sim
+Apple,iPhone 13 Pro Max,Recondicionado,1024,Boa (80% ate 94%),4933.31,312,6,Nao
+Apple,iPhone 14 Pro,Usado - Excelente,64,Ruim (40% ate 59%),7021.06,174,8,Sim
+Apple,iPhone 15 Plus,Novo,1024,Boa (80% ate 94%),7802.75,338,8,Sim
+Apple,iPhone 13 Pro,Novo,64,Ruim (40% ate 59%),6549.22,194,7,Sim
+Apple,iPhone 15 Pro,Novo,16,Ok (60% ate 79%),5470.37,292,3,Sim
+Apple,iPhone 13 Pro Max,Novo,256,Perfeita (95% ate 100%),7543.89,72,12,Sim
+Apple,iPhone 14 Plus,Recondicionado,512,Perfeita (95% ate 100%),4068.95,10,3,Sim
+Apple,iPhone 15,Recondicionado,128,Ruim (40% ate 59%),8368.06,125,18,Sim
+Apple,iPhone 15 Pro,Recondicionado,256,Ruim (40% ate 59%),8103.62,328,15,Nao
+Apple,iPhone 14,Usado - Excelente,16,Ruim (40% ate 59%),4519.68,231,16,Sim
+Apple,iPhone 15 Pro Max,Novo,1024,Muito Ruim (abaixo de 39%),4015.21,234,14,Sim
+Apple,iPhone 13 Pro,Novo,128,Muito Ruim (abaixo de 39%),8223.15,305,2,Sim
+Apple,iPhone 15,Usado - Bom,1024,Perfeita (95% ate 100%),9224.54,95,13,Sim
+Apple,iPhone 14,Usado - Bom,512,Muito Ruim (abaixo de 39%),8782.22,157,2,Sim
+Apple,iPhone 14 Pro,Usado - Excelente,32,Ruim (40% ate 59%),6029.78,83,18,Sim
+Apple,iPhone 14 Plus,Recondicionado,16,Boa (80% ate 94%),5857.3,225,17,Sim
+Apple,iPhone 14,Recondicionado,512,Muito Ruim (abaixo de 39%),5592.8,137,7,Sim
+Apple,iPhone 13 Mini,Recondicionado,128,Muito Ruim (abaixo de 39%),7359.24,174,18,Sim
+Apple,iPhone 13 Pro,Com defeito,32,Perfeita (95% ate 100%),9042.18,348,19,Sim
+Apple,iPhone 13,Recondicionado,128,Boa (80% ate 94%),8233.2,180,20,Sim
+Apple,iPhone 15 Pro Max,Recondicionado,128,Ruim (40% ate 59%),4849.59,271,19,Sim
+Apple,iPhone 14 Pro Max,Novo,128,Ruim (40% ate 59%),3848.73,300,18,Sim
+Apple,iPhone 13 Pro,Recondicionado,256,Ok (60% ate 79%),6567.34,45,6,Sim
+Apple,iPhone 14,Usado - Excelente,128,Perfeita (95% ate 100%),7931.34,22,16,Sim
+Apple,iPhone 13 Mini,Recondicionado,128,Ok (60% ate 79%),5882.97,98,2,Sim
+Apple,iPhone 15,Com defeito,8,Ok (60% ate 79%),9417.19,283,12,Sim
+Apple,iPhone 13 Mini,Novo,256,Muito Ruim (abaixo de 39%),8318.38,303,18,Sim
+Apple,iPhone 15 Pro,Usado - Excelente,16,Ok (60% ate 79%),9457.37,16,12,Sim
+Apple,iPhone 13 Pro Max,Novo,128,Ok (60% ate 79%),4686.63,44,16,Nao
+Apple,iPhone 15 Pro Max,Recondicionado,512,Boa (80% ate 94%),8931.03,49,8,Nao
+Apple,iPhone 14 Pro,Usado - Bom,128,Ok (60% ate 79%),9907.44,186,18,Sim
+Apple,iPhone 14 Pro Max,Novo,64,Ruim (40% ate 59%),7902.2,30,16,Sim
+Apple,iPhone 13 Pro,Usado - Bom,256,Boa (80% ate 94%),6615.63,329,12,Sim
+Apple,iPhone 14,Recondicionado,256,Muito Ruim (abaixo de 39%),9211.51,32,12,Sim
+Apple,iPhone 14,Novo,64,Boa (80% ate 94%),4303.64,139,1,Sim
+Apple,iPhone 15 Plus,Novo,16,Muito Ruim (abaixo de 39%),9204.12,223,20,Sim
+Apple,iPhone 15 Pro,Usado - Excelente,16,Perfeita (95% ate 100%),7420.86,42,8,Sim
+Apple,iPhone 14 Pro,Novo,256,Ruim (40% ate 59%),5822.77,31,9,Sim
+Apple,iPhone 15,Novo,32,Muito Ruim (abaixo de 39%),9057.89,175,15,Sim
+Apple,iPhone 13 Pro,Usado - Excelente,256,Perfeita (95% ate 100%),9029.81,21,10,Sim
+Apple,iPhone 15 Pro,Usado - Bom,16,Ok (60% ate 79%),5498.37,189,11,Sim
+Apple,iPhone 15,Recondicionado,256,Ok (60% ate 79%),8363.84,274,13,Sim
+Apple,iPhone 14 Plus,Recondicionado,8,Ok (60% ate 79%),8353.78,44,6,Sim
