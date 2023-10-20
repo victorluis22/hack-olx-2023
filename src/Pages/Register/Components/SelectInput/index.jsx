@@ -4,11 +4,12 @@ import * as s from "./styles";
 const SelectInput = ({label, options, onChangeFunction}) => {
     return(
       <s.Container>
-        <s.Label>{label}</s.Label>
+        <s.Label>{label}*</s.Label>
 
         <s.Input onChange={(e) => onChangeFunction(e)}>
-          {options.map((eachOption) => {
-            return <option value={eachOption}>{eachOption}</option>
+          <option value="">Selecione uma opção</option>
+          {options.map((eachOption, index) => {
+            return <option key={index} value={eachOption}>{eachOption}</option>
           })}
         </s.Input>
         

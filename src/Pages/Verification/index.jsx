@@ -3,23 +3,33 @@ import * as s from "./styles";
 
 import loading from '../../Assets/VerificationImage/loading.gif'
 import { useNavigate, useLocation } from "react-router-dom";
+import { getConfirmation } from "../../Services/api";
 
 const Verification = () => {
     const navigate = useNavigate()
     const location = useLocation();
     const { content } = location.state
 
-    useEffect(() => {
-      setTimeout(() => {
-        console.log(content)
-        if (content.Memoria == "64GB"){
-          navigate("/verification/final/false")
+    const requestConfirmation = async () => {
+      try{
+        const response = await getConfirmation(content)
+        const golpe = response.data.golpe
+        console.log(golpe)
+
+        if (golpe > 0.7){
+          navigate("/verification/final/false", {state: {golpe: golpe, content: content}})
         }
         else{
-          navigate("/verification/final/true")
+          navigate("/verification/final/true", {state: {golpe: golpe, content: content}})
         }
-        
-      }, 2000)
+      }
+      catch(e){
+        alert("Erro ao acessar API OLX Smart")
+      }
+    }
+
+    useEffect(() => {
+      requestConfirmation()
     }, [])
 
     return(

@@ -24,7 +24,7 @@ export const Title = styled.h1`
     font-weight: bold;
 `;
 
-export const Subtitle = styled.h2`
+export const SubTitle = styled.h2`
     font-size: 17px;
     font-weight: lighter;
 `;

@@ -14,10 +14,12 @@ import BottomContent from "./Components/BottomContent";
 import CheckboxOption from "./Components/CheckboxOption";
 import VerificationCode from "../../Assets/GlobalImages/verificationCode.png"
 
-import axios from "axios";
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { registerData } from "../../Services/registerData";
+import { instantWarn } from "../../Configs/toastConfig";
+
+import {toast} from "react-toastify"
 
 
 const Register = () => {
@@ -33,32 +35,31 @@ const Register = () => {
       Bateria: "",
       Preco: "",
       Localizacao: "",
-      Contato: "",
-      Golpe: ""
+      Contato: ""
     });
 
     const navigate = useNavigate()
     
 
     const handleSubmit = () => {
-      // axios
-      // .post('http://localhost:5000/', content)
-      // .then((response) => {
-      //   console.log(response);
-      // })
-      // .catch((error) => {
-      //   console.log(error);
-      // });
-      navigate("/verification", {state: {content: content}})
-      window.scrollTo(0, 0)
+      const { Marca, Modelo, Condicao, Memoria, Bateria, Preco } = content
+
+      if (Marca && Modelo && Condicao && Memoria && Bateria && Preco){
+        navigate("/verification", {state: {content: content}})
+        window.scrollTo(0, 0)
+      }
+      else{
+        alert("Preencha todos os campos obrigatórios!")
+      }
+      
     };
 
 
     const handleChangeTitle = (e) => {
-    setContent({
-      ...content,
-      Titulo: e.target.value,
-    });
+      setContent({
+        ...content,
+        Titulo: e.target.value,
+      });
     };
     const handleChangeDesc = (e) => {
     setContent({
@@ -133,12 +134,12 @@ const Register = () => {
 
           <Input title={"Título*"} valueInput={content.Titulo} onChangeFunction={handleChangeTitle}/>
           <Input title={"Descrição*"} hasTextArea={true} valueInput={content.Descricao} onChangeFunction={handleChangeDesc} placeholder={"Descreva aqui seu aparelho"}/>
-          <SelectInput label={"Marca*"} options={["-", "Apple","Samsung","Motorola"]} valueInput={content.Marca} onChangeFunction={handleChangeMark}/>
-          <SelectInput label={"Modelo*"} options={["-","iPhone 8","iPhone 8 Plus","iPhone X","iPhone XR", "iPhone XS","iPhone XS Max", "iPhone 11","iPhone 11 PRO","iPhone 11 PRO MAX","iPhone SE (2da generación)","iPhone 12","iPhone 12 mini","iPhone 12 PRO","iPhone 12 PRO MAX","Iphone 13","Iphone 13 PRO","Iphone 13 PRO MAX","Iphone 14","Iphone 14 PRO","Iphone 14 PRO MAX"]} valueInput={content.Modelo} onChangeFunction={handleChangeModel}/>
-          <SelectInput label={"Condição"} options={["-","Usado"]} valueInput={content.Condicao} onChangeFunction={handleChangeCondition}/>
-          <SelectInput label={"Memória Interna"} options={["-", "64GB", "128GB", "256GB"]} valueInput={content.Memoria} onChangeFunction={handleChangeCapacity}/>
-          <SelectInput label={"Cor"} options={["-","Azul Sierra","Rosa","Meia-noite","Estelar","Verde","Red"]} valueInput={content.Cor} onChangeFunction={handleChangeColor} />
-          <SelectInput label={"Saúde da bateria"} options={["-","80-90%","90-100%"]} valueInput={content.Bateria} onChangeFunction={handleChangeBatery}/>
+          <SelectInput label={"Marca"} options={registerData.brand} valueInput={content.Marca} onChangeFunction={handleChangeMark}/>
+          <SelectInput label={"Modelo"} options={registerData.model} valueInput={content.Modelo} onChangeFunction={handleChangeModel}/>
+          <SelectInput label={"Condição"} options={registerData.condition} valueInput={content.Condicao} onChangeFunction={handleChangeCondition}/>
+          <SelectInput label={"Memória Interna"} options={registerData.memory} valueInput={content.Memoria} onChangeFunction={handleChangeCapacity}/>
+          <SelectInput label={"Cor"} options={registerData.color} valueInput={content.Cor} onChangeFunction={handleChangeColor} />
+          <SelectInput label={"Saúde da bateria"} options={registerData.batery} valueInput={content.Bateria} onChangeFunction={handleChangeBatery}/>
           <Input title={"Preço (R$)"} valueInput={content.Preco} onChangeFunction={handleChangePrice}/>
 
           <FotoSubmit />

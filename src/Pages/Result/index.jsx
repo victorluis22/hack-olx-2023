@@ -11,19 +11,22 @@ import image6 from "../../Assets/Result/image6.svg"
 import image7 from "../../Assets/Result/image7.svg"
 import image8 from "../../Assets/Result/image8.svg"
 import image9 from "../../Assets/Result/image9.svg"
-import IASucess from "./Components/IASucess";
-import { useNavigate, useParams } from "react-router-dom";
-import IAFalse from "./Components/IAFalse";
 
-const Result = ({ location }) => {
+import { useLocation, useNavigate, useParams } from "react-router-dom";
+import IAFalse from "./Components/IAFalse";
+import IASucess from "./Components/IASucess";
+
+const Result = () => {
     const { result } = useParams()
+    const location = useLocation()
+    const { content, golpe } = location.state
     const navigate = useNavigate()
 
     return(
         <s.Container>
             {result === "true" ?            
                 <>
-                    <IASucess />
+                    <IASucess golpe={golpe}/>
 
                     <s.SideContainer>
                         <s.Title>Anuncie com garantia da OLX, pagamento e entrega fácil para todo o Brasil.</s.Title>
@@ -35,7 +38,7 @@ const Result = ({ location }) => {
                             <ImageInfo image={image4} title = {"Seu comprador parcela sem juros e você recebe à vista."}/>
                         </s.ItemContainer>
 
-                        <s.Subtitle>Após a venda você vai receber R$ 3.870,00 .</s.Subtitle>
+                        <s.Subtitle>Após a venda você vai receber R$ {parseFloat(content.Preco) * 0.9}.</s.Subtitle>
 
                         <s.UserBadge>
                             <ImageInfo image={image5} title={"Fique Atento"}/>
@@ -56,7 +59,7 @@ const Result = ({ location }) => {
                 </>
                 :
                 <>
-                    <IAFalse />
+                    <IAFalse golpe={golpe}/>
                     <s.Button onClick={() => {
                         navigate("/")
                         window.scrollTo(0, 0)
