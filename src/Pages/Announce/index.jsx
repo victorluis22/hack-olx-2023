@@ -11,9 +11,9 @@ import Iphonetelabaixo2 from "../../Assets/Announce/Iphonetelabaixo2.jpg"
 import Saudebateria from "../../Assets/Announce/Saudebateria.jpg"
 import Button from "./Components/Button";
 
-import CardsSmarts from "./Components/CardsSmarts";
-
 import RightCards from "./Components/RightCard";
+
+import RelatedProducts from "./Components/RelatedProducts/index"
 
 const Announce = () => {
     const navigate = useNavigate()
@@ -49,7 +49,8 @@ const Announce = () => {
           </s.SideContainer>
           </s.firstpart>
 
-          <CardsSmarts />
+          <RelatedProducts />
+
       </s.Container>  
     )
 }

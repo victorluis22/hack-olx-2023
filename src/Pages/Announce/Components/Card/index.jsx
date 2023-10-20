@@ -1,22 +1,30 @@
 import React from "react";
-
-import * as card from "./styles";
+import SmartLogo from "../../../../Assets/Announce/SmartLogo.svg"
+import * as product from "./styles";
 
 import { useNavigate } from "react-router-dom";
 
-// import iphones from "../../../../Assets/Announce/Iphone.svg"
-
-const CardIndex = () => {
+const Card = ({title, image, price, isSmart}) => {
     
   const navigate = useNavigate()
 
     return(
-      <card.Container>
-        <card.Title>Também pode te interessar</card.Title>
-
-        <card.ImageIphone src={iphones} alt="Foto de um ai fome"/>
-      </card.Container>  
+      <product.Container>
+        <product.Image src={image}/>
+        <product.Title>{title}</product.Title>
+        <product.Value>R${price}</product.Value>
+        {
+          isSmart ?
+          <product.SmartContainer>
+            <product.SmartTitle>Produto</product.SmartTitle>
+            <product.SmartLogo src={SmartLogo}/>
+          </product.SmartContainer>
+          :
+          <>
+          </>
+        }
+      </product.Container>
 )
 }
 
-export default CardIndex
+export default Card
