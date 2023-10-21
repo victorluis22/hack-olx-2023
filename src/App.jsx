@@ -25,8 +25,8 @@ function App() {
       <Router basename="hack-olx-2023">
         <Header />
         <Routes>
-          {pages.map((eachPage) => {
-            return <Route path={eachPage.url} element={eachPage.element}/>
+          {pages.map((eachPage, index) => {
+            return <Route key={index} path={eachPage.url} element={eachPage.element}/>
           })}
         </Routes>
       </Router>

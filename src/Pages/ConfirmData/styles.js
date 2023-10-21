@@ -44,9 +44,6 @@ export const FacialArea = styled.div`
     flex-direction: column;
 `;
 
-export const FacialAreaImage = styled.img`
-    width: 300px;
-`;
 
 export const Button = styled.button`
     background-color: var(--orange);

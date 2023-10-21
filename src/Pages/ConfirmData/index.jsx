@@ -9,6 +9,7 @@ import FacialArea from "../../Assets/VerificationImage/FacialArea.svg"
 import NameInput from "./Components/NameInput";
 import CPFInput from "./Components/NameInput";
 import DateInput from './Components/DateInput';
+import FacialVideo from "./Components/FacialVideo";
 
 const ConfirmData = () => {
   
@@ -17,11 +18,11 @@ const ConfirmData = () => {
     const [CPF, setCPF] = useState("")
     const [date, setDate] = useState("")
     const location = useLocation();
-    const { content } = location.state
+    // const { content } = location.state
 
 
     const switchPage = () => {
-      navigate("/verification/final", {state: {content: content}})
+      // navigate("/verification/final", {state: {content: content}})
       window.scrollTo(0, 0)
     }
     
@@ -39,7 +40,7 @@ const ConfirmData = () => {
         </s.Card>
         <s.Card>
           <s.FacialArea>
-            <s.FacialAreaImage src={FacialArea}/>
+            <FacialVideo />
             <s.Title>Centralize seu rosto dentro da área demarcada</s.Title>            
           </s.FacialArea>
         </s.Card>
