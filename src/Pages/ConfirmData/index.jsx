@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import * as s from "./styles";
 
 import loading from '../../Assets/VerificationImage/loading.gif'
@@ -10,6 +10,7 @@ import NameInput from "./Components/NameInput";
 import CPFInput from "./Components/NameInput";
 import DateInput from './Components/DateInput';
 import FacialVideo from "./Components/FacialVideo";
+import { UserContext } from "../../Context/User";
 
 const ConfirmData = () => {
   
@@ -17,14 +18,25 @@ const ConfirmData = () => {
     const [name, setName] = useState("")
     const [CPF, setCPF] = useState("")
     const [date, setDate] = useState("")
+    const [person, setPerson] = useState("")
     const location = useLocation();
-    // const { content } = location.state
+    const { content } = location.state
+    const { user } = useContext(UserContext)
 
+    useEffect(() => {
+      if (person){
+        if (person === user.Nome){
+          console.log(person)
+          navigate("/verification/final", {state: {content: content, user: true}})
+          window.scrollTo(0, 0)
+        }
+        else{
+          navigate("/verification/final", {state: {content: content, user: false}})
+          window.scrollTo(0, 0)
+        }
+      }
+    },[person])
 
-    const switchPage = () => {
-      // navigate("/verification/final", {state: {content: content}})
-      window.scrollTo(0, 0)
-    }
     
     return(
       <s.Container>
@@ -40,11 +52,9 @@ const ConfirmData = () => {
         </s.Card>
         <s.Card>
           <s.FacialArea>
-            <FacialVideo />
-            <s.Title>Centralize seu rosto dentro da área demarcada</s.Title>            
+            <FacialVideo setPerson={setPerson}/>         
           </s.FacialArea>
         </s.Card>
-        <s.Button onClick={switchPage}>Efetuar verificação</s.Button>
       </s.Container>  
     )
 }

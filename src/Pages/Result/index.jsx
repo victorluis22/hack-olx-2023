@@ -19,14 +19,14 @@ import IASucess from "./Components/IASucess";
 const Result = () => {
     const { result } = useParams()
     const location = useLocation()
-    const { content, golpe } = location.state
+    const { content, golpe, user } = location.state
     const navigate = useNavigate()
 
     return(
         <s.Container>
             {result === "true" ?            
                 <>
-                    <IASucess golpe={golpe}/>
+                    <IASucess golpe={golpe} user={user}/>
 
                     <s.SideContainer>
                         <s.Title>Anuncie com garantia da OLX, pagamento e entrega fácil para todo o Brasil.</s.Title>
@@ -59,7 +59,7 @@ const Result = () => {
                 </>
                 :
                 <>
-                    <IAFalse golpe={golpe}/>
+                    <IAFalse golpe={golpe} user={user}/>
                     <s.Button onClick={() => {
                         navigate("/")
                         window.scrollTo(0, 0)

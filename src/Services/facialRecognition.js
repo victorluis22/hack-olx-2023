@@ -1,25 +1,30 @@
 import * as faceapi from 'face-api.js'
 
-export const initRecognition = (video) => {
-    return Promise.all([
-        faceapi.nets.ssdMobilenetv1.loadFromUri("/Models"),
-        faceapi.nets.faceLandmark68Net.loadFromUri("/Models"),
-        faceapi.nets.faceRecognitionNet.loadFromUri("/Models")
-    ]).then(startWebcam(video)).then(faceRecognition(video))
+export const loadModels = async (setModelsLoaded) => {
+    const MODEL_URL = '/Models';
+    Promise.all([
+      faceapi.nets.ssdMobilenetv1.loadFromUri(MODEL_URL),
+      faceapi.nets.faceLandmark68Net.loadFromUri(MODEL_URL),
+      faceapi.nets.faceRecognitionNet.loadFromUri(MODEL_URL)
+    ]).then(setModelsLoaded(true));
 }
 
-export function startWebcam(video){
-    navigator.mediaDevices.getUserMedia({
-        "video": true,
-        audio: false
-    }).then((stream) => {
-        video.srcObject = stream
-    }).catch((error) => {
-        console.log(error)
-    })
+export const startVideo = (setLoading, setCaptureVideo, videoRef) => {
+    setLoading(true)
+    setCaptureVideo(true);
+    navigator.mediaDevices
+      .getUserMedia({ video: { width: 300 } })
+      .then(stream => {
+        let video = videoRef.current;
+        video.srcObject = stream;
+        video.play();
+      })
+      .catch(err => {
+        console.error("error:", err);
+      });
 }
 
-async function getLabeledFacedDescriptions(){
+export async function getLabeledFacedDescriptions(){
     const labels = ["Fellipe","Picanha","Victor","Caio"]
 
     return Promise.all(
@@ -39,30 +44,36 @@ async function getLabeledFacedDescriptions(){
             return new faceapi.LabeledFaceDescriptors(label, descriptions)
         })
     )
-}
+  }
 
-export async function faceRecognition(video) {
+export const handleVideoOnPlay = async (canvasRef, videoRef, videoWidth, videoHeight, setLoading, setPerson, setCaptureVideo) => {
     const labeledFaceDescriptors = await getLabeledFacedDescriptions()
     
-
     const faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors)
 
-    const canvas = faceapi.createCanvasFromMedia(video)
-    document.body.append(canvas)
-    
-    const displaySize = { width: video.width, height: video.height }
+    canvasRef.current.innerHTML = faceapi.createCanvasFromMedia(videoRef.current);
 
-    faceapi.matchDimensions(canvas, displaySize)
+    const displaySize = {
+      width: videoWidth,
+      height: videoHeight
+    }
+
+    faceapi.matchDimensions(canvasRef.current, displaySize);
 
     setInterval(async () => {
-        const detections = await faceapi
-            .detectAllFaces(video)
-            .withFaceLandmarks()
-            .withFaceDescriptors()
+      if (canvasRef && canvasRef.current){
 
+        const detections = await faceapi
+          .detectAllFaces(videoRef.current)
+          .withFaceLandmarks()
+          .withFaceDescriptors()
+
+        setLoading(false)
+
+        
         const resizedDetections = faceapi.resizeResults(detections, displaySize)
 
-        canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
+        canvasRef && canvasRef.current && canvasRef.current.getContext('2d').clearRect(0, 0, videoWidth, videoHeight)
 
         const results = resizedDetections.map((d) => {
             return faceMatcher.findBestMatch(d.descriptor)
@@ -71,7 +82,21 @@ export async function faceRecognition(video) {
         results.forEach((result, i) => {
             const box = resizedDetections[i].detection.box
             const drawBox = new faceapi.draw.DrawBox(box, { label: result })
-            drawBox.draw(canvas)
+            canvasRef && canvasRef.current && drawBox.draw(canvasRef.current)
         })
+
+        if (results[0]._label != "unknown"){
+            setTimeout(() => {
+                setPerson(results[0]._label)
+                closeWebcam(videoRef, setCaptureVideo)
+            }, 2000)
+        }
+      }
     }, 100)
-}
+  }
+
+export const closeWebcam = (videoRef, setCaptureVideo) => {
+    videoRef && videoRef.current && videoRef.current.pause();
+    videoRef && videoRef.current && videoRef.current.srcObject.getTracks()[0].stop();
+    setCaptureVideo(false);
+  }

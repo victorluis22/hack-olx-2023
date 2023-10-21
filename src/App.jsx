@@ -9,6 +9,7 @@ import { Route, Routes } from "react-router-dom";
 import Verification from './Pages/Verification';
 import Result from './Pages/Result';
 import ConfirmData from './Pages/ConfirmData';
+import { UserProvider } from './Context/User';
 
 
 function App() {
@@ -23,12 +24,14 @@ function App() {
   return (
     <div className='App'>
       <Router basename="hack-olx-2023">
-        <Header />
-        <Routes>
-          {pages.map((eachPage, index) => {
-            return <Route key={index} path={eachPage.url} element={eachPage.element}/>
-          })}
-        </Routes>
+        <UserProvider>
+          <Header />
+          <Routes>
+            {pages.map((eachPage, index) => {
+              return <Route key={index} path={eachPage.url} element={eachPage.element}/>
+            })}
+          </Routes>
+        </UserProvider>
       </Router>
     </div>
   )

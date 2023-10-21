@@ -43,22 +43,3 @@ export const FacialArea = styled.div`
     align-items: center;
     flex-direction: column;
 `;
-
-
-export const Button = styled.button`
-    background-color: var(--orange);
-    border: none;
-    border-radius: 20px;
-    color: white;
-    font-size: 20px;
-    /* width: 50%; */
-    margin-top: 2rem;
-    justify-self: flex-end;
-    padding: 15px 50px;
-    transition: 0.2s;
-
-    &:hover{
-        cursor: pointer;
-        background-color: var(--hover-orange);
-    }
-`;

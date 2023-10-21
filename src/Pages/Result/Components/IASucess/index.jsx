@@ -4,13 +4,14 @@ import * as s from "./styles"
 import {AiOutlineCheckCircle} from 'react-icons/ai'
 import OlxSmart from "../../../../Components/OlxSmart";
 
-const IASucess = ({golpe}) => {
+const IASucess = ({golpe, user}) => {
     return(
         <s.Container>
             <OlxSmart />
             <AiOutlineCheckCircle color="green" size={60}/>
             <s.Title>Anúncio Verificado</s.Title>
             <s.SubTitle>Probabilidade de golpe: {golpe * 100 }%</s.SubTitle>
+            <s.SubTitle>Usuário verificado com sucesso</s.SubTitle>
 
             <s.SubTitle>
                 Parabéns, seu anúnico foi analisado pela inteligência artificial do OLX e foi classificada

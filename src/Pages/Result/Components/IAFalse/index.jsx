@@ -4,13 +4,19 @@ import * as s from "./styles"
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 import OlxSmart from "../../../../Components/OlxSmart";
 
-const IAFalse = ({ golpe }) => {
+const IAFalse = ({ golpe, user }) => {
     return(
         <s.Container>
             <OlxSmart />
             <AiOutlineCloseCircle color="red" size={60}/>
             <s.Title>Anúncio Verificado</s.Title>
-            <s.SubTitle>Probabilidade de golpe: {golpe * 100 }%</s.SubTitle>
+
+            {!user ?
+                <s.SubTitle>Reconhecimento facial detectou uma irregularidade no seu cadastro</s.SubTitle>
+                :
+                <s.SubTitle>Probabilidade de golpe: {golpe * 100 }%</s.SubTitle>
+            }
+
 
             <s.SubTitle>
                 Nossa IA verificou uma possível ameaça de golpe.

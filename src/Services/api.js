@@ -8,7 +8,7 @@ export const api = axios.create({
 export const getConfirmation = async (content) => {
     const url = '/'
     const { Marca, Modelo, Condicao, Memoria, Bateria, Preco } = content
-
+    
     const data = {
         Marca: Marca,
         Modelo: Modelo,
